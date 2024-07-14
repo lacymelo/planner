@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="justify">
+  <p align="center">
+    <img alt="Logo Omnistack 7 - Rocketseat" src="./src/assets/wallpaper.png" width="550px" />
+  </p>
 
-## Getting Started
+  <h1 align="center">
+    🤖 Trilha ReactJS: PLANNER
+  </h1>
 
-First, run the development server:
+  > Bem-vindo ao repositório do projeto plann.er, uma recriação do FRONTEND desenvolvido no evento NLW Journey promovido pela Rocketseat. Esta nova versão aborda a criação de um FRONTEND totalmente em NextJS 14 🚀.
+</div>
 
+## :eyes: Visite o Designer System do plann.er
+👉 [Storybook](https://www.figma.com/community/file/1392276515495389646/nlw-journey-planejador-de-viagem)
+
+##  📥 Configurações e instalações
+> Estas são todas as bibliotecas utilizadas neste projeto, verifique cada uma com atenção.
+
+✨ Para criar o projeto execute este comando.
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm create next-app@latest hambre
+```
+🛠️ Para manter um padrão de escrita do código, instale a lib `@rocketseat/eslint-config` da rocketseat.
+```bash
+pnpm i @rocketseat/eslint-config -D 
+```
+🛠️ No arquivo `.eslintrc.json` do seu projeto adicione a configuração `@rocketseat/eslint-config/react`, da seguinte forma.
+```bash
+{
+  "extends": [
+    "@rocketseat/eslint-config/react",
+    "next/core-web-vitals"
+  ]
+}
+```
+🛠️ Para utilizar ícones no projeto, instale a lib `lucide-react`, executando o seguinte comando.
+```bash
+pnpm i lucide-react
+```
+🛠️ Para trabalhar com formulário e validação de formulário usaremos as libs `react-hook-form` e `zod`, faça a instalação com o seguinte comando.
+```bash
+pnpm i react-hook-form @hookform/resolvers zod
+```
+🛠️ Para trabalhar com gráficos usaremos a lib `echarts-for-react`, faça a instalação com o seguinte comando.
+```bash
+ pnpm i echarts-for-react
+```
+🛠️ Para trabalhar com variáveis ambientes instale a
+biblioteca para gerenciar variáveis ambientes
+```bash
+ pnpm i @t3-oss/env-nextjs
+```
+✨ Para concatenar class já existentes do tailwind-merge, vamos utilizar a lib `tailwind-merge`, para instalar utilizaremos o seguinte comando.
+```bash
+ pnpm i tailwind-merge
+```
+🛠️ Para trabalhar com requisições para apis instale a biblioteca axios
+```bash
+ pnpm i axios
+```
+🛠️ Para trabalhar com autenticação vamos utilizar o NextAuth, para isso instale utilizando o comando.
+```bash
+ pnpm i next-auth
+```
+🛠️ Para trabalhar com mensagens disparadas após a requisição, vamos usar a lib `react-toastfy`, para instalar utilize o seguinte comando.
+```bash
+ pnpm i --save react-toastify
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🛠️ Para trabalhar com máscara em inputs, vamos usar a lib `react-input/mask`, para instalar utilize o seguinte comando.
+```bash
+ pnpm i @react-input/mask
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# :closed_book: License
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Released in 2024 :closed_book: License
+Made with love by  Laciene Melo [#lacymelo](https://github.com/lacymelo) 🚀.
+This project is under the [MIT license](./LICENSE).
+Give a ⭐️ if this project helped you!
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
