@@ -12,9 +12,11 @@ const config: Config = {
       inter: ['var(--font-inter)'],
     },
     colors: {
+      'transparent': 'transparent',
       'white': '#FFFFFF',
       'lime': {
         300: '#BEF264',
+        400: '#9AC155',
         950: '#1A2E05'
       },
       'zinc': {
@@ -29,6 +31,9 @@ const config: Config = {
         900: '#18181B',
         950: '#09090B'
       }
+    },
+    backgroundImage: {
+      pattern: 'url(/bg.png)'
     }
   },
   plugins: [],

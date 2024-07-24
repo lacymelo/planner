@@ -41,10 +41,6 @@ pnpm i lucide-react
 ```bash
 pnpm i react-hook-form @hookform/resolvers zod
 ```
-🛠️ Para trabalhar com gráficos usaremos a lib `echarts-for-react`, faça a instalação com o seguinte comando.
-```bash
- pnpm i echarts-for-react
-```
 🛠️ Para trabalhar com variáveis ambientes instale a
 biblioteca para gerenciar variáveis ambientes
 ```bash
