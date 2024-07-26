@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default async function DashboardLayout({ children }: { children: ReactNode }) {
     return (
-        <div className="h-screen flex items-center justify-center bg-pattern bg-no-repeat bg-center">
+        <div className="max-w-6xl px-6 py-10 mx-auto space-y-8">
             {children}
         </div>
     )
