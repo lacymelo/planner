@@ -1,4 +1,5 @@
 'use client'
+import { Button } from "@/components/Button";
 import { CreateActivityModal } from "@/components/CreateActivityModal";
 import { Calendar, CircleCheck, CircleDashed, Link2, MapPin, Plus, Settings2, UserCog } from "lucide-react";
 import Link from "next/link";
@@ -31,13 +32,11 @@ export default function Trip() {
 
                     <div className="w-px h-6 bg-zinc-800"></div>
 
-                    <button className="flex items-center gap-2 bg-zinc-800 text-zinc-200 rounded-lg px-5 py-2 font-medium hover:bg-zinc-700 transition-all transform duration-300">
-                        <span className="text-base">
-                            Alterar local/data
-                        </span>
+                    <Button variant="secondary">
+                        Alterar local/data
 
                         <Settings2 className="size-5" />
-                    </button>
+                    </Button>
                 </div>
             </div>
 
@@ -46,13 +45,11 @@ export default function Trip() {
                     <div className="flex items-center justify-between">
                         <h2 className="text-3xl font-semibold">Atividades</h2>
 
-                        <button onClick={() => handleIsCreateActivityModal()} className="bg-lime-300 text-lime-950 px-5 py-2 rounded-lg font-medium flex items-center gap-2 hover:bg-lime-400 transition-all duration-300">
+                        <Button onClick={() => handleIsCreateActivityModal()}>
                             <Plus className="size-5 text-lime-950" />
 
-                            <span className="text-base">
-                                Cadastrar atividade
-                            </span>
-                        </button>
+                            Cadastrar atividade
+                        </Button>
                     </div>
 
                     <div className="space-y-8">
@@ -145,13 +142,11 @@ export default function Trip() {
                             </div>
                         </div>
 
-                        <button className="flex items-center gap-2 bg-zinc-800 text-zinc-200 w-full rounded-lg px-5 h-11 font-medium hover:bg-zinc-700 transition-all transform duration-300 justify-center">
+                        <Button variant="secondary" size="full">
                             <Plus className="size-5" />
 
-                            <span className="text-base">
-                                Cadastrar novo link
-                            </span>
-                        </button>
+                            Cadastrar novo link
+                        </Button>
                     </div>
 
                     <div className="w-full h-px bg-zinc-800"></div>
@@ -183,13 +178,11 @@ export default function Trip() {
                             </div>
                         </div>
 
-                        <button className="flex items-center gap-2 bg-zinc-800 text-zinc-200 w-full rounded-lg px-5 h-11 font-medium hover:bg-zinc-700 transition-all transform duration-300 justify-center">
+                        <Button variant="secondary" size="full">
                             <UserCog className="size-5" />
 
-                            <span className="text-base">
-                                Gerenciar convidados
-                            </span>
-                        </button>
+                            Gerenciar convidados
+                        </Button>
                     </div>
 
                 </div>

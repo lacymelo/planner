@@ -1,5 +1,6 @@
 import { InviteGuestsModalProps } from "@/@types/variables";
 import { AtSign, Plus, X } from "lucide-react";
+import { Button } from "./Button";
 
 export function InviteGuestsModal({ handleIsGuestsModal, emailsToInvite, removeEmailFromInvites, addToEmailToInvite }: InviteGuestsModalProps) {
     return (
@@ -44,11 +45,11 @@ export function InviteGuestsModal({ handleIsGuestsModal, emailsToInvite, removeE
                         placeholder="Digite o e-mail do convidado"
                         className="bg-transparent text-lg placeholder-zinc-400 outline-none w-full" />
 
-                    <button type="submit" className="bg-lime-300 text-lime-950 px-5 py-2 rounded-lg font-medium flex items-center gap-2 hover:bg-lime-400 transition-all duration-300 text-base">
+                    <Button>
                         Convidar
 
                         <Plus className="size-5 text-lime-950" />
-                    </button>
+                    </Button>
                 </form>
             </div>
         </div>

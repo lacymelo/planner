@@ -18,7 +18,7 @@
 
 ✨ Para criar o projeto execute este comando.
 ```bash
-pnpm create next-app@latest hambre
+pnpm create next-app@latest planner
 ```
 🛠️ Para manter um padrão de escrita do código, instale a lib `@rocketseat/eslint-config` da rocketseat.
 ```bash
@@ -37,6 +37,11 @@ pnpm i @rocketseat/eslint-config -D
 ```bash
 pnpm i lucide-react
 ```
+🛠️ Para trabalhar com variantes no tailwind, instale a lib `tailwind-variants`, execute o seguinte comando
+```bash
+ pnpm i tailwind-variants
+```
+
 🛠️ Para trabalhar com formulário e validação de formulário usaremos as libs `react-hook-form` e `zod`, faça a instalação com o seguinte comando.
 ```bash
 pnpm i react-hook-form @hookform/resolvers zod
@@ -53,10 +58,6 @@ biblioteca para gerenciar variáveis ambientes
 🛠️ Para trabalhar com requisições para apis instale a biblioteca axios
 ```bash
  pnpm i axios
-```
-🛠️ Para trabalhar com autenticação vamos utilizar o NextAuth, para isso instale utilizando o comando.
-```bash
- pnpm i next-auth
 ```
 🛠️ Para trabalhar com mensagens disparadas após a requisição, vamos usar a lib `react-toastfy`, para instalar utilize o seguinte comando.
 ```bash

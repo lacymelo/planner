@@ -1,5 +1,6 @@
 import { ConfirmTripModalProps } from "@/@types/variables";
 import { Mail, User, X } from "lucide-react";
+import { Button } from "./Button";
 
 export function ConfirmTripModal({ handleIsConfirmTripModal, createTrip }: ConfirmTripModalProps) {
     return (
@@ -39,9 +40,9 @@ export function ConfirmTripModal({ handleIsConfirmTripModal, createTrip }: Confi
                             className="bg-transparent text-lg placeholder-zinc-400 outline-none w-full" />
                     </div>
 
-                    <button type="submit" className="bg-lime-300 text-lime-950 p-2.5 rounded-lg font-medium flex items-center justify-center gap-2 hover:bg-lime-400 transition-all duration-300 w-full text-base">
+                    <Button size="full">
                         Confirmar criação de viagem
-                    </button>
+                    </Button>
                 </form>
             </div>
         </div>
