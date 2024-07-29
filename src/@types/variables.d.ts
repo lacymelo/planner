@@ -11,3 +11,8 @@ export type ConfirmTripModalProps = {
     handleIsConfirmTripModal: () => void,
     createTrip: (event: FormEvent<HTMLFormElement>) => void
 }
+
+export type CreateActivityModalProps = {
+    handleIsCreateActivityModal: () => void,
+    // createTrip: (event: FormEvent<HTMLFormElement>) => void
+}

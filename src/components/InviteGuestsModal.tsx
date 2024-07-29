@@ -44,7 +44,7 @@ export function InviteGuestsModal({ handleIsGuestsModal, emailsToInvite, removeE
                         placeholder="Digite o e-mail do convidado"
                         className="bg-transparent text-lg placeholder-zinc-400 outline-none w-full" />
 
-                    <button type="submit" className="bg-lime-300 text-lime-950 px-5 py-2 rounded-lg font-medium flex items-center gap-2 hover:bg-lime-400 transition-all duration-300 ">
+                    <button type="submit" className="bg-lime-300 text-lime-950 px-5 py-2 rounded-lg font-medium flex items-center gap-2 hover:bg-lime-400 transition-all duration-300 text-base">
                         Convidar
 
                         <Plus className="size-5 text-lime-950" />
