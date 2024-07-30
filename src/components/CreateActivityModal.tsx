@@ -1,6 +1,7 @@
 import { ConfirmTripModalProps, CreateActivityModalProps } from "@/@types/variables";
 import { Calendar, Clock, Mail, Tag, User, X } from "lucide-react";
 import { Button } from "./Button";
+import TextInput from "./TextInput";
 
 export function CreateActivityModal({ handleIsCreateActivityModal }: CreateActivityModalProps) {
     return (
@@ -21,24 +22,18 @@ export function CreateActivityModal({ handleIsCreateActivityModal }: CreateActiv
                 </div>
 
                 <form onSubmit={() => { }} className="flex flex-col gap-3">
-                    <div className="p-2.5 bg-zinc-950 border border-zinc-800 rounded-lg flex items-center w-full gap-2">
-                        <Tag className="size-5 text-zinc-400" />
+                    <TextInput
+                        name="title"
+                        placeholder="Qual a atividade"
+                        icon={<Tag className="size-5 text-zinc-400" />}
+                    />
 
-                        <input
-                            name="title"
-                            placeholder="Qual a atividade"
-                            className="bg-transparent text-lg placeholder-zinc-400 outline-none w-full" />
-                    </div>
-
-                    <div className="p-2.5 bg-zinc-950 border border-zinc-800 rounded-lg flex items-center w-full gap-2">
-                        <Calendar className="size-5 text-zinc-400" />
-
-                        <input
-                            type="datetime-local"
-                            name="occurs_at"
-                            placeholder="Data e horário da atividade"
-                            className="bg-transparent text-lg placeholder-zinc-400 outline-none w-full" />
-                    </div>
+                    <TextInput
+                        type="datetime-local"
+                        name="occurs_at"
+                        placeholder="Data e horário da atividade"
+                        icon={<Calendar className="size-5 text-zinc-400" />}
+                    />
 
                     <Button size="full">
                         Salvar atividade

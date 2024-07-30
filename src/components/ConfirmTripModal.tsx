@@ -1,6 +1,7 @@
 import { ConfirmTripModalProps } from "@/@types/variables";
 import { Mail, User, X } from "lucide-react";
 import { Button } from "./Button";
+import TextInput from "./TextInput";
 
 export function ConfirmTripModal({ handleIsConfirmTripModal, createTrip }: ConfirmTripModalProps) {
     return (
@@ -21,14 +22,11 @@ export function ConfirmTripModal({ handleIsConfirmTripModal, createTrip }: Confi
                 </div>
 
                 <form onSubmit={createTrip} className="flex flex-col gap-3">
-                    <div className="p-2.5 bg-zinc-950 border border-zinc-800 rounded-lg flex items-center w-full gap-2">
-                        <User className="size-5 text-zinc-400" />
-
-                        <input
-                            name="name"
-                            placeholder="Seu nome completo"
-                            className="bg-transparent text-lg placeholder-zinc-400 outline-none w-full" />
-                    </div>
+                    <TextInput
+                        name="name"
+                        placeholder="Seu nome completo"
+                        icon={<User className="size-5 text-zinc-400" />}
+                    />
 
                     <div className="p-2.5 bg-zinc-950 border border-zinc-800 rounded-lg flex items-center w-full gap-2">
                         <Mail className="size-5 text-zinc-400" />
