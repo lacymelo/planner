@@ -2,7 +2,7 @@
 import { Button } from "@/components/Button";
 import { ConfirmTripModal } from "@/components/ConfirmTripModal";
 import { InviteGuestsModal } from "@/components/InviteGuestsModal";
-import { ArrowRight, AtSign, Calendar, Mail, MapPin, Plus, Settings2, User, UserRoundPlus, X } from "lucide-react"
+import { ArrowRight, Calendar, MapPin, Settings2, UserRoundPlus } from "lucide-react"
 import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
 

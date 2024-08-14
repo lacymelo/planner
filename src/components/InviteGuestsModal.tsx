@@ -1,6 +1,7 @@
 import { InviteGuestsModalProps } from "@/@types/variables";
 import { AtSign, Plus, X } from "lucide-react";
 import { Button } from "./Button";
+import { Heading } from "./Heading";
 
 export function InviteGuestsModal({ handleIsGuestsModal, emailsToInvite, removeEmailFromInvites, addToEmailToInvite }: InviteGuestsModalProps) {
     return (
@@ -8,7 +9,7 @@ export function InviteGuestsModal({ handleIsGuestsModal, emailsToInvite, removeE
             <div className="w-[640px] rounded-xl py-5 px-6 shadow-lg bg-zinc-900 space-y-5">
                 <div className="flex flex-col text-left gap-2">
                     <div className="flex items-center justify-between">
-                        <h2 className="text-lg font-semibold">Selecionar convidados</h2>
+                        <Heading as="h2" size="lg">Selecionar convidados</Heading>
 
                         <button onClick={handleIsGuestsModal}>
                             <X className="size-5 text-zinc-400" />

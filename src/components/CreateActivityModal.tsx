@@ -2,6 +2,7 @@ import { ConfirmTripModalProps, CreateActivityModalProps } from "@/@types/variab
 import { Calendar, Clock, Mail, Tag, User, X } from "lucide-react";
 import { Button } from "./Button";
 import TextInput from "./TextInput";
+import { Heading } from "./Heading";
 
 export function CreateActivityModal({ handleIsCreateActivityModal }: CreateActivityModalProps) {
     return (
@@ -9,7 +10,7 @@ export function CreateActivityModal({ handleIsCreateActivityModal }: CreateActiv
             <div className="w-[640px] rounded-xl py-5 px-6 shadow-lg bg-zinc-900 space-y-5">
                 <div className="flex flex-col text-left gap-2">
                     <div className="flex items-center justify-between">
-                        <h2 className="text-lg font-semibold">Cadastrar atividade</h2>
+                        <Heading as="h2" size="lg">Cadastrar atividade</Heading>
 
                         <button onClick={handleIsCreateActivityModal}>
                             <X className="size-5 text-zinc-400" />

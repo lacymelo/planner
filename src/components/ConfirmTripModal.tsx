@@ -2,6 +2,7 @@ import { ConfirmTripModalProps } from "@/@types/variables";
 import { Mail, User, X } from "lucide-react";
 import { Button } from "./Button";
 import TextInput from "./TextInput";
+import { Heading } from "./Heading";
 
 export function ConfirmTripModal({ handleIsConfirmTripModal, createTrip }: ConfirmTripModalProps) {
     return (
@@ -9,7 +10,7 @@ export function ConfirmTripModal({ handleIsConfirmTripModal, createTrip }: Confi
             <div className="w-[640px] rounded-xl py-5 px-6 shadow-lg bg-zinc-900 space-y-5">
                 <div className="flex flex-col text-left gap-2">
                     <div className="flex items-center justify-between">
-                        <h2 className="text-lg font-semibold">Confirmar criação de viagem</h2>
+                        <Heading as="h2" size="lg">Confirmar criação de viagem</Heading>
 
                         <button onClick={handleIsConfirmTripModal}>
                             <X className="size-5 text-zinc-400" />
@@ -28,15 +29,12 @@ export function ConfirmTripModal({ handleIsConfirmTripModal, createTrip }: Confi
                         icon={<User className="size-5 text-zinc-400" />}
                     />
 
-                    <div className="p-2.5 bg-zinc-950 border border-zinc-800 rounded-lg flex items-center w-full gap-2">
-                        <Mail className="size-5 text-zinc-400" />
-
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="Seu e-mail pessoal"
-                            className="bg-transparent text-lg placeholder-zinc-400 outline-none w-full" />
-                    </div>
+                    <TextInput
+                        type="email"
+                        name="email"
+                        placeholder="Seu e-mail pessoal"
+                        icon={<Mail className="size-5 text-zinc-400" />}
+                    />
 
                     <Button size="full">
                         Confirmar criação de viagem

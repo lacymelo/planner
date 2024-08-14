@@ -1,6 +1,7 @@
 'use client'
 import { Button } from "@/components/Button";
 import { CreateActivityModal } from "@/components/CreateActivityModal";
+import { Heading } from "@/components/Heading";
 import { Calendar, CircleCheck, CircleDashed, Link2, MapPin, Plus, Settings2, UserCog } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
@@ -43,7 +44,7 @@ export default function Trip() {
             <main className="flex gap-16 px-6">
                 <div className="flex-1 space-y-6">
                     <div className="flex items-center justify-between">
-                        <h2 className="text-3xl font-semibold">Atividades</h2>
+                        <Heading as="h2" size="3xl">Atividades</Heading>
 
                         <Button onClick={() => handleIsCreateActivityModal()}>
                             <Plus className="size-5 text-lime-950" />
@@ -116,7 +117,7 @@ export default function Trip() {
 
                 <div className="w-80 space-y-6">
                     <div className="space-y-6">
-                        <h2 className="font-semibold text-xl">Links importantes</h2>
+                        <Heading as="h2" size="xl">Links importantes</Heading>
 
                         <div className="space-y-5">
                             <div className="flex items-center justify-between gap-4">
@@ -152,7 +153,7 @@ export default function Trip() {
                     <div className="w-full h-px bg-zinc-800"></div>
 
                     <div className="space-y-6">
-                        <h2 className="font-semibold text-xl">Convidados</h2>
+                        <Heading as="h2" size="xl">Convidados</Heading>
 
                         <div className="space-y-5">
                             <div className="flex items-center justify-between gap-4">
